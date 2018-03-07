@@ -1,0 +1,29 @@
+- Meteorjs - 5 points
+- Mongodb - 10 points
+    (setup - 3, insert - 3, update - 2, retrive - 2)
+- If a user tries to log in while a game is in progress,
+  then display a message that they can join the room in the next round - 2 points
+- Generate random numbers to populate (5 * 5) grid for logged in users (unique data for each user) - 5
+- Generate random number to callout every 5 seconds and send it to all the users playing the game - 3
+- Displaying 5 * 5 table of numbers to users in a table in ascending order with unique numbers - 3
+- Allowing user to click on a number in grid and changing the color of selected number to cross out the called out number - 3
+- When user clicks on bingo, pause callout number generation  - 5
+  Other users should know that a user has clicked on bingo - 2
+  When system decides it is actually a bingo, display that info to other users - 2
+  When system decides it is not a bingo, display that info to other users - 2
+  Resume generating callout numbers after that - 1
+  Check if user cancelled out only those numbers which were called out - 5
+  Check if the user has a bingo on:
+  	- Row - 5
+  	- Column - 5
+  	- Corners - 5
+- First 3 users win the game, others lose - 5
+
+- Code is well formatted and easy to read, with proper commenting - 2
+- Page passes the W3C validator - 2
+- Your code passes JSHint (3)
+
+Creative -
+- A table where all the callout numbers are displayed in a different color - 5
+- diagonal - 5
+- penality for the user when clicked on bingo without actually having a bingo (dont display any data to user for 5 seconds) - 5

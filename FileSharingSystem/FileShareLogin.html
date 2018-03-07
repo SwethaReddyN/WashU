@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>	
+  <head>
+    <title>FileShare Login</title>
+    <link rel = "stylesheet" type = "text/css" href = "FileShare.css">
+    <script type = "text/javascript" src = "FormValidations.js" ></script>
+  </head>
+
+  <body>
+
+    <div class = "container">
+      <div class="header">
+        <img src = "images/logo.png" class = "logo" alt = "FileShare">
+        <input type = "text" id = "view" class = "view" name = "view" value = "Login">
+      </div>
+      <div class="clearfix">
+        <div class = "login">
+          <form method = "POST" action = "LoginUser.php" name = "usernameForm"  onsubmit = "return validateUsername();">
+            <div>
+              <label>Enter User Name : </label>
+              <input type = "text" name = "uname" value = "" required><br/>
+            </div>
+            <div>
+              <input type = "submit" id = "login" class = "button" value = "Login"/>
+              <input type = "reset" id = "reset" class = "button" value = "Reset"/>
+            </div>
+            <div>
+              <h4>Don't have an account? <a href="FileShareRegister.html">Sign Up</a></h4>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>

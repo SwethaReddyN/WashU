@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height:100%;
+    position:relative;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.logo {
+    float : left;
+}
+
+.view {
+    float : right;
+    width : 900px;
+    height : 40px;
+    font-size : 20px;
+    border-style : hidden;
+}
+
+.viewFS {
+    width : 500px;
+    height : 40px;
+    font-size : 20px;
+    text-align : right;
+    border-style : hidden;
+}
+
+.logout {
+    float : right;
+}
+
+.deleteUser {
+    float : right;
+    padding-right:10px;
+}
+
+.header {
+    color: white;
+    padding: 15px;
+    height: 10vh;
+    border-bottom: groove #ff0000;
+    margin-bottom : 50px;
+}
+
+.button {
+    margin-top : 50px;
+    width : 110px;
+    height : 30px;
+    color : black;
+    margin-bottom : 100px;
+    margin-right : 5px;
+}
+
+.login {
+    text-align : center;
+}
+
+.register {
+    text-align : center;
+}
+
+label {
+    padding-right : 20px;
+}
+
+.footer {
+    border-top: groove #ff0000;
+    color: white;
+    padding: 15px;
+    height: 10vh;
+}
+
+.dropdownList {
+    width : 100%;
+    margin-bottom : 10px;
+}
+ 
+.uploadOptions {
+    padding: 5px;
+    width : 100%;
+}
+
+select {
+    background-color: #33b5e5;
+    color : white;
+}
+
+select option {
+    background-color: white;
+    color : black;
+}
+
+.column {
+    width : 100%;
+    height : 100%;
+    float: left;
+    padding: 15px;
+    text-align : center;
+}
+
+.menu {
+    width: 20%;
+    height : 100%;
+    text-align : left;
+    float : left;
+}
+
+.clearfix {
+    width : 100%;
+    height: 70vh;
+}
+
+.content {
+    width : 79%;
+    height : 100%;
+    float : right;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top : 30px;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.fileRow {
+    width : 100%;
+    marging-bottom : 20px;
+    padding-bottom : 5px;
+}
+
+#contentFrame {
+    width : 99%;
+    height : 99%;
+    border-style : hidden;
+}
+
+.filesList {
+    list-style-type: none;
+    width : 100%;
+    float : left;
+}
+
+.file {
+    background-color: lightgray;
+    color: #ffffff;
+    height : 30px;
+    float : left;
+    width : 100%;
+}
+
+.fileImg {
+    width : 20px;
+    background-color : black;
+}
+
+.fileName {
+    background-color: green;
+    color : black;
+    width : 200px;
+}
+
+.rowContainer {
+  width : 100%;
+} 
+
+.row {
+   width : 100%;
+}
+
+.rowImg {
+  margin-right : 5px;
+}
+
+.fileNameCol {
+    width : 60%;
+}
+
+.rowDelete {
+    float : right;
+}
+
+.hidden {    
+    visibility: hidden;
+}
+
+.hiddenOption {
+    display: none;
+}
+
+.deleteUser {
+
+    margin-left : 4px;
+}

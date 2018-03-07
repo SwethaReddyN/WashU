@@ -1,0 +1,237 @@
+* {
+   box-sizing : border-box;
+}
+
+html {
+   min-height : 100%;
+   position : relative;
+}
+
+body {
+   height : 100vh;
+   overflow : hidden;
+}
+
+.container {
+   height : 100vh;
+   width : 100vw;
+}
+
+.header {
+    padding : 10px;
+    height : 7vh;
+    border-bottom : groove #0B5345;
+    width : 100vw;
+    display : inline-block;
+    background-color : #138D75;
+}
+
+.contents {
+    width : 100%;
+    height: 70vh;
+}
+
+.footer {
+   border-top : groove #0B5345;
+   color : white;
+   padding : 15px;
+   height : 10vh;
+}
+
+.logo {
+   color : white;
+	font-family : "Colonna MT";
+	font-size : 35px;
+	text-align : left;
+   width : 10vw;
+   padding-bottom : 10px;
+   float : left;
+   font-style: italic;
+}
+
+.topnav {
+   width : 70vw;
+   height : 60%;
+   text-align : left;
+   font-size : 10px;
+   color : white;
+   position: absolute;
+   top: 35px;
+   left: 300px;
+}
+
+.topnavbuttons {
+   background-color : #138D75;
+   border: none;
+   display: inline-block;
+   margin-left : 30px;
+   color : white;
+}
+
+.topnavbuttons:hover {
+    background-color: #EC7063;
+    color: white;
+}
+
+.contents {
+   width : 100%;
+   height : 85vh;
+}
+
+.column {
+    width : 100%;
+    height : 100%;
+    float: left;
+    padding: 15px;
+    text-align : center;
+}
+
+.content {
+    width : 70%;
+    height : 100%;
+    float : left;
+}
+
+.sideMenu {
+    width: 26%;
+    height : 100%;
+    text-align : left;
+    float : right;
+    border-left : groove #0B5345;
+}
+
+#contentFrame {
+   width : 99%;
+   height : 100%;
+   text-align : center;
+   border-style : hidden
+}
+
+.login {
+   width : 99%;
+   height : 50%;
+}
+
+.loginForm {
+   width : 99%;
+   height : 40%;
+   position : relative;
+   top : 0px;
+   left : 0px;
+}
+
+.filterForm {
+   width : 99%;
+   height : 59%;
+}
+
+#loginFrame {
+   width : 99%;
+   height : 100%;
+   text-align : center;
+   border-style : hidden;
+}
+
+#filterFrame {
+   width : 99%;
+   height : 100%;
+   border-style : hidden;
+}
+
+.filterContainer {
+
+ z-index: 1;
+}
+
+.errormessage {
+   color : red;
+}
+
+.url {
+   color : gray;
+}
+
+.title {
+   text-decoration: underline;
+}
+
+.linkbutton {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding: 5px 10px 5px 10px;
+    margin-right: 70px;
+    margin-top : 10px;
+}
+.submitstories {
+   width : 200px;
+}
+
+.logout {
+
+  width : 400px;
+  margin-left : 100px;
+}
+
+.category {
+   width : 700px;
+}
+
+.hidden {    
+    visibility: hidden;
+}
+
+.storybuttons {
+   margin-left : 200px;
+}
+
+.textpostbutton {
+   margin-right : 50px;
+}
+
+.storylist {
+    list-style-type: none;
+    width : 100%;
+    float : left;
+}
+
+.row_0 {
+   background-color : lightgray;
+   width : 99%;
+}
+
+.row_1 {
+   background-color : white;
+   width : 99%;
+}
+
+#listcontainer {
+   
+   list-style-type: none;
+}
+
+.story {
+   padding-bottom : 30px;
+   border-bottom : groove #6E2C00  ;
+}
+
+.comments {
+   margin-top : 20px;
+}
+
+.commentlabel {
+   color : lightgray;
+}
+
+.commenttext {
+   width : 700px;   
+}
+
+.storylist {
+    list-style-type: none;
+    width : 100%;
+    float : left;
+}

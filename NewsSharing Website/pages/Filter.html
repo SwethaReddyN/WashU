@@ -1,0 +1,22 @@
+<!-- Displays Filter form in filterFrame and submits form to ApplyFilter.php script-->
+<html>
+   <body>
+      <script>
+      </script>
+      <div class = "filterContainer">
+         <form method = "POST" action = "../core/ApplyFilter.php" target = "contentFrame">
+            <label>Select Category to filter posts: </label> <br>
+            <input type = "checkbox" name = "category[]" value = "general"> General News <br>
+            <input type = "checkbox" name = "category[]" value = "sports"> Sports <br>
+            <input type = "checkbox" name = "category[]" value = "business"> Business <br>
+            <input type = "checkbox" name = "category[]" value = "entertainemnt"> Entertainment <br>
+            <input type = "checkbox" name = "category[]" value = "fashion"> Fashion <br>
+            <input type = "checkbox" name = "category[]" value = "lifestyle"> Lifestyle <br>
+            <input type = "checkbox" name = "category[]" value = "tech"> Tech <br>
+            <input type = "checkbox" name = "category[]" value = "environment"> Environment <br><br>
+   
+            <input type = "submit" name = "submitcategory">
+         </form>
+      </div>
+   </body>
+</html>

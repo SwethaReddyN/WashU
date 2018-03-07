@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <title>FileShare Register</title>
+    <link rel = "stylesheet" type = "text/css" href = "FileShare.css">
+  </head>
+  
+  <body>
+    <div class = "container">
+      <div class="header">
+	 <img src = "images/logo.png" class = "logo" alt = "FileShare">
+         <input type = "text" id = "view" class = "view" name = "view" value = "Register">
+      </div>
+      
+      <div class="clearfix">
+	
+	<div class = "register">
+	  <form method = "POST" action = "RegisterUser.php">
+	    <div>
+	      <label>Enter User Name : </label>
+	      <input type = "text" name = "uname" value = "" required><br/>
+	    </div>
+	    <div>
+	      <input type = "submit" id = "login" class = "button" value = "Register"/>
+	      <input type = "reset" id = "reset" class = "button" value = "Reset"/>
+	    </div>
+	  </form>
+	</div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>

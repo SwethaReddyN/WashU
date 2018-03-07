@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Bingo Game</title>
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="styles/main.css"/>
+      <link rel="stylesheet" href="angular-bootstrap/ui-bootstrap-csp.css" />
+      <link rel="stylesheet" href="ngModal/dist/ng-modal.css" />
+      <link rel="stylesheet" href="html5-boilerplate/dist/css/normalize.css">
+      <link rel="stylesheet" href="html5-boilerplate/dist/css/main.css">
+
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="jquery/dist/jquery.js"></script>
+      <script src="es5-shim/es5-shim.js"></script>
+      <script src="angular/angular.js"></script>
+      <script src="json3/lib/json3.min.js"></script>
+      <script src="bootstrap/dist/js/bootstrap.js"></script>
+      <script src="angular-resource/angular-resource.js"></script>
+      <script src="angular-cookies/angular-cookies.js"></script>
+      <script src="angular-sanitize/angular-sanitize.js"></script>
+      <script src="angular-route/angular-route.js"></script>
+      <script src="angular-socket-io/socket.js"></script>
+      <script src="angular/angular.js"></script>
+      <script src="angular-bootstrap/ui-bootstrap.js"></script>
+      <script src="ngModal/dist/ng-modal.js"></script>
+      <script src="html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+      
+      <script src="app/app.js"></script>
+      <script src="app/controllers/LoginController.js"></script>
+      <script src="app/controllers/BingoTableController.js"></script>
+      <script src="app/controllers/CalledOutTableController.js"></script>
+      <script src="app/sockets/socket.js"></script>
+   </head>
+   <body ng-app="bingoApp">
+    <div id = "calloutNumberDisplayDiv"> 
+      <div id = "displayCalloutNumber">x</div>
+    </div>
+    <div ng-controller='loginCtrl'>
+      <span id="name">Hello {{uname}}</span>
+      <!-- Reference: https://github.com/adamalbrecht/ngModal -->
+      <modal-dialog show='modalShown' dialog-title='User Name'>
+        <div>
+          <label class="control-label" for="username">Name:</label>
+          <input type="text" class="form-control" ng-model="player.uname" ng-keyup="hitEnter($event)" ng-change="change()" required>
+          <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+          <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled='!validName'>Save</button>
+        </div>
+      </modal-dialog>
+    </div>
+    <div id = "tableDiv" ng-controller="tableCtrl">
+      <table>
+        <tr ng-repeat="col in bingo">
+          <td ng-repeat-start="row in col.rows track by $index" style="cursor:pointer" ng-click="changeColor(col.colNum, row.rowNum)" 
+                ng-class="{selected: row.isCalledOut, notselected: !row.isCalledOut }" ng-repeat-end>
+            {{row.value}}
+          </td>
+        </tr>
+      </table>
+      <button type="button" class="btn btn-primary" ng-click="claimBingo()">Bingo</button>
+    </div>
+    <div id = "calledOutTableDiv" ng-controller="calledOutTableCtrl">
+      <table>
+        <tr ng-repeat="row in calledOutTable">
+          <td ng-repeat="col in row.cols"
+              ng-class="{calledOut: col.isCalledOut, notCalledOut: !col.isCalledOut}">
+            {{col.value}}
+          </td>
+        </tr>
+	    </table>
+	  </div>
+  </body>
+</html>
